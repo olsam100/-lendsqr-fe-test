@@ -1,0 +1,484 @@
+@media (max-width: 1024px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+
+  .headerleft {
+    gap: 4rem;
+  }
+
+  .search-container {
+    width: 30rem;
+  }
+
+  .sidebar {
+    width: 24rem;
+    min-width: 24rem;
+  }
+
+  .usercontainerwrapper {
+    padding: 4rem 3rem 20rem 3rem !important;
+  }
+
+  .cardswrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: flex-start;
+  }
+
+  .headerleft {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .brandIconbox {
+    width: 12rem;
+    height: 2.5rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .headerright {
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .headerrightleft {
+    gap: 2rem;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .navItems {
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    padding: 0.8rem 0 0.8rem 2rem;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .usercontainerwrapper {
+    padding: 3rem 2rem 15rem 2rem !important;
+    gap: 2.5rem;
+  }
+
+  .containertitle {
+    font-size: 2rem;
+  }
+
+  .cardswrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .table-container {
+    padding: 1.5rem 0;
+  }
+
+  .users-table {
+    overflow-x: auto;
+  }
+
+  .table-grid {
+    min-width: 800px;
+  }
+
+  .table-cell {
+    padding: 1.2rem 1.5rem;
+    min-height: 5rem;
+  }
+
+  .header-cell {
+    font-size: 1rem;
+  }
+
+  .cell-content {
+    font-size: 1.3rem;
+  }
+
+  .pagination-controls {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .pagination-btn {
+    min-width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+  }
+
+  .user-details-page {
+    padding: 1.5rem;
+  }
+
+  .userdetailsheader {
+    gap: 1.5rem;
+
+    .back-button {
+      font-size: 1.4rem;
+      gap: 1rem;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .userdetailstitlewrapper {
+      gap: 2.5rem;
+
+      .userdetailstitleinner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+        .userdetailstitle {
+          font-size: 2rem;
+        }
+
+        .userStatusContainer {
+          width: 100%;
+          flex-wrap: wrap;
+          gap: 1rem;
+
+          .status-badge-large,
+          .status-action-btn {
+            flex: 1 1 calc(50% - 0.5rem);
+            min-width: calc(50% - 0.5rem);
+            text-align: center;
+            justify-content: center;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .page-header {
+    .user-header-info {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      gap: 1.5rem;
+
+      .user-avatar {
+        width: 8rem;
+        height: 8rem;
+        font-size: 2.8rem;
+      }
+
+      .user-header-text {
+        p:first-child {
+          font-size: 1.8rem;
+        }
+
+        .user-subtitle {
+          font-size: 1.3rem;
+        }
+      }
+
+      .userrating {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+
+        .verticalbar {
+          display: none;
+        }
+      }
+    }
+
+    .user-tabs {
+      flex-direction: column;
+      padding: 0;
+
+      .tab-item {
+        width: 100%;
+        text-align: left;
+        padding: 1.2rem 2rem;
+        border-bottom: 1px solid #e5e7eb;
+        border-left: 3px solid transparent;
+
+        &.active {
+          border-left-color: #39cdcc;
+          border-bottom-color: #e5e7eb;
+        }
+      }
+    }
+  }
+
+  .user-details-content {
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .details-section {
+    margin-bottom: 3rem;
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .details-section-wrapper {
+    .generalInformation {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .detail-item {
+    label {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .informwrapper {
+    .informtitle {
+      font-size: 1.1rem;
+    }
+
+    .informDetails {
+      font-size: 1.3rem;
+    }
+  }
+
+  .details-actions {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    padding-top: 2rem;
+
+    button {
+      width: 100%;
+      padding: 1.2rem 2rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  .divider {
+    margin: 2rem 0;
+  }
+
+  .filter-overlay-wrapper {
+    width: 100% !important;
+  }
+
+  .filter-dropdown-content {
+    padding: 1.5rem;
+  }
+
+  .filter-field {
+    margin-bottom: 1.2rem;
+
+    label {
+      font-size: 1.3rem;
+    }
+  }
+
+  .filter-input,
+  .filter-select {
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .filter-actions {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .filter-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  .headerrightleft {
+    gap: 1.5rem;
+
+    .docslink {
+      display: none;
+    }
+  }
+
+  .username span {
+    display: none;
+  }
+
+  .sidebar {
+    max-height: 40vh;
+  }
+
+  .usercontainerwrapper {
+    padding: 2rem 1.5rem 10rem 1.5rem !important;
+  }
+
+  .containertitle {
+    font-size: 1.8rem;
+  }
+
+  .table-cell {
+    padding: 1rem 1rem;
+  }
+
+  .userdetailsheader {
+    .userdetailstitlewrapper {
+      .userdetailstitleinner {
+        .userStatusContainer {
+          flex-direction: column;
+
+          .status-badge-large,
+          .status-action-btn {
+            flex: 1;
+            width: 100%;
+            min-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .page-header {
+    .user-header-info {
+      padding: 1.5rem;
+
+      .user-avatar {
+        width: 7rem;
+        height: 7rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .user-details-content {
+    padding: 1.5rem;
+  }
+
+  .more-dropdown-portal {
+    left: 1rem !important;
+    right: 1rem !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  button,
+  .nav-link,
+  .tab-item,
+  .pagination-btn {
+    min-height: 4.4rem;
+    touch-action: manipulation;
+  }
+
+  .search-results-info {
+    font-size: 1.3rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .status-badge {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .status-badge-large {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .sidebar {
+    max-height: 30vh;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .usercontainerwrapper {
+    padding: 2rem 3rem 10rem 3rem !important;
+  }
+}
+
+@media print {
+  .header,
+  .sidebar,
+  .pagination-controls,
+  .details-actions,
+  .status-action-btn,
+  .back-button {
+    display: none !important;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .content-wrapper,
+  .user-details-content {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .page-header {
+    break-inside: avoid;
+  }
+}
