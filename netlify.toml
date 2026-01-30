@@ -1,0 +1,21 @@
+[build]
+  # Since index.html is in the root, we leave base empty
+  base = ""
+
+  # This is the folder created AFTER you run 'npm run build'
+  # For Vite/TS projects, this is usually "dist"
+  # For Create React App, this is usually "build"
+  publish = "dist"
+
+  # The command to build your project
+  command = "npm run build"
+
+# This block is CRITICAL for React/React-Router. 
+# It tells Netlify to let your app handle the routes instead of throwing a 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  directory = "functions/"
