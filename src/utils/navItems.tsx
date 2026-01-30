@@ -22,12 +22,6 @@ import {
   AuditLogs,
 } from '../assets/icons/dashboard-icons/dashboard'
 
-export enum Nav {
-  Customers,
-  Businesses,
-  Settings,
-}
-
 export const sidebarItems = [
   {
     items: [

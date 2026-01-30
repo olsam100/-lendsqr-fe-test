@@ -15,6 +15,7 @@ import FilterDropdown, { type FilterValues } from './filterdropdown'
 import MoreActions from './morections'
 import '../styles/datatable.scss'
 import { Pagination } from './pagination'
+import type { User } from '../services/api/users'
 
 type DataTableProps<T> = {
   data: T[]
@@ -247,7 +248,7 @@ export function DataTable<T>({
           onClick={(e) => e.stopPropagation()}
         >
           <MoreActions
-            row={menuAnchor.row}
+            row={menuAnchor.row as User}
             onClose={() => setMenuAnchor(null)}
           />
         </div>
