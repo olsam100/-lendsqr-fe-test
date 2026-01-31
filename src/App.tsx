@@ -12,11 +12,19 @@ function App() {
     setIsAuthenticated(true)
   }
 
+  const handleLogout = () => {
+    localStorage.removeItem('isAuthenticated')
+    setIsAuthenticated(false)
+  }
+
   return (
     <Router>
       <Routes>
         {isAuthenticated ? (
-          <Route path='/*' element={<Authenticated />} />
+          <Route
+            path='/*'
+            element={<Authenticated onLogout={handleLogout} />}
+          />
         ) : (
           <Route
             path='/*'

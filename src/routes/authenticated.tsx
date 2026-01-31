@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type FC } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import Dashboard from '../pages/landing/dashboard'
 import { LogoIcon } from '../assets/icons/brand'
@@ -15,7 +15,11 @@ import { searchBus } from '../utils/searchBus'
 import Users from '../pages/landing/user'
 import UserDetails from '../components/userdetails'
 
-const Authenticated = () => {
+interface AuthenticatedProps {
+  onLogout: () => void
+}
+
+const Authenticated: FC<AuthenticatedProps> = ({ onLogout }) => {
   const [searchQuery, setSearchQuery] = useState('')
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const location = useLocation()
@@ -91,6 +95,23 @@ const Authenticated = () => {
                 <ArrowDown />
               </div>
             </div>
+            <button
+              onClick={onLogout}
+              className='logout-btn'
+              style={{
+                marginLeft: '1.6rem',
+                padding: '0.8rem 1.6rem',
+                background: '#dc2626',
+                color: 'white',
+                border: 'none',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontSize: '1.4rem',
+                fontFamily: 'Work Sans',
+              }}
+            >
+              Logout
+            </button>
           </div>
         </header>
         <div className='main'>
